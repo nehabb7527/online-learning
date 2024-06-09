@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- AOS link -->
+</head>
+<body>
+    <section class="sub-header">
+<nav>
+    <a href="index.html"><img src="./images/logo.png"></a>
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html.html">ABOUT</a></li>
+            <li><a href="course.html.html">COURSE</a></li>
+            <li><a href="contact.html.html">CONTACT</a></li>
+          </ul>
+    </div>
+    <i class="fa fa-bars"onclick="showMenu()"></i>
+</nav>
+
+<h1>About Us</h1>
+
+   <!-- About us  -->
+    <section class="about-us">
+        <div class="row3">
+            <div class="about-col">
+                <h1>We are the world's largest university</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                A obcaecati fugit corporis accusantium necessitatibus? Distinctio aperiam
+                aliquam vel? Mollitia veniam voluptas, voluptatem omnis commodi facere? Quae, 
+                nisi ex. Deleniti, vitae?</p>
+                <a href="" class="hero-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="about discuess.jpg">
+            </div>
+        </div>
+    </section>
+    
+
+
+
+<!-- footer -->
+<div class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti unde dicta numquam ipsa fuga animi, 
+        mollitia quaerat itaque, culpa est necessitatibus<br> repudiandae! Illum quisquam earum, asperiores 
+        dolorum rem quam corporis.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+</div>
+<!-- // javascript toggle menu -->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        
+    </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
